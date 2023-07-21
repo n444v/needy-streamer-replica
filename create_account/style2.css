@@ -1,0 +1,217 @@
+@font-face {
+	font-family: "Dogica";
+	src: url(../public/dogica/TTF/dogica.ttf);
+  }
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Dogica";
+  /* font-size: 15px; */
+  background-image: url("../public/images/bg/mainbg2.jpeg");
+  background-position: center;
+  background-size: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: rgba(100, 78, 215, 255);
+  height: 100vh;
+  cursor: url("../public/images/cursor.png"), auto;
+}
+
+img:active {
+  transform: translateY(2px);
+}
+
+svg:active {
+  transform: translateY(1px);
+}
+
+#container {
+	display: flex;
+	/* flex-direction: row; */
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	background-image: url("../public/images/bg/mainbgcrop.png");
+	width: 80%;
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat;
+	
+	/* background-size: auto; */
+	/* position: relative; */
+	/* justify-content: center;
+	align-items: center; */
+  }
+  
+label {
+  display: block;
+}  
+
+.square {
+	display: inline-block;
+	background-color: rgba(100, 78, 215, 255);
+   /* margin-right: 5px; */
+	width: 10px;
+	height: 10px;
+  }
+
+.sign-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: rgba(161,142,221,255);
+  width: 35%;
+  height: 60%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 0px 4px 0px rgba(144, 144, 144, 0.74);
+  border: 4px solid rgba(144, 243, 225, 255);
+  border-bottom: 10px solid rgba(144, 243, 225, 255);
+  outline: pink 2px solid;
+}
+
+.header {
+  /* display: inline-block; */
+  display: flex;
+align-items: center;
+justify-content: center;
+  width: 99%;
+  height: 5%; 
+  font-size: 10px;
+  /* margin-bottom: auto; */
+  /* vertical-align: top; */
+  /* float: top; */
+  /* margin: 0; */
+  /* padding: 0; */
+   /* margin-bottom: 210px;  */
+  /* 
+  padding-top: 5px;
+  padding-bottom: 5px; */
+  /* padding-left: 10px; */
+  background-color: rgba(239, 207, 239, 255);
+  border-bottom: 2px solid rgba(144, 243, 225, 255);
+}
+
+.header > p {
+	display: inline-block;
+	padding-left: 5px;
+	width:40%;
+
+	/* font-size: 10px; */
+}
+
+form > p {
+  text-align: center;
+}
+
+.tooltip  {
+  font-size: 8px !important;
+}
+
+svg:nth-of-type(1) {
+	font-size: 15px;
+	padding-left: 35%;
+	/* position: absolute; */
+	/* top: 2px;
+	right: 45px; */
+  }
+  svg:nth-of-type(2) {
+	font-size: 15px;
+	/* position: absolute; */
+	/* top: 2px;
+	right: 25px; */
+	padding-left: 2%;
+  }
+  
+  svg:nth-of-type(3) {
+	font-size: 15px;
+	/* position: absolute; */
+	/* top: 2px;
+	right: 5px; */
+	padding-left: 2%;
+  }
+
+
+/* SIGN IN PAGE */
+#signInForm {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 60%;
+ margin-bottom: 100px;
+  /* margin-top: -200px; */
+  /* background-color: rgba(239, 207, 239, 255); */
+  background-color: rgba(255, 255, 255, 0.812);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+#akicon {
+	width: 30%;
+	padding-bottom: 10px;
+}
+/* CREATE ACCOUNT PAGE */
+#signUpForm {
+    display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 60%;
+ margin-bottom: 90px;
+  /* margin-top: -200px; */
+  /* background-color: rgba(239, 207, 239, 255); */
+  background-color: rgba(255, 255, 255, 0.812);
+  border-radius: 10px;
+  justify-content: center;
+  /* border-top: 2px solid rgba(144, 243, 225, 255); */
+  align-items: center;
+}
+
+
+/* EFFFECTS */
+img:hover,
+svg:hover,
+button:hover,
+#submit:hover{
+  cursor: pointer;
+}
+
+
+/* SIGN UP VALIDATION CLASSES */
+
+label:first-child {
+  /* display: inline-block; */
+  width: 160px;
+  text-align: right;
+}
+
+.tooltip {
+  margin-left: 5px;
+  font-size: 0.75rem;
+  /* display: inline-block; */
+  background-color: #ccc;
+  padding: 5px;
+  display: none; /* Hide the tooltip initially*/
+}
+
+.invalid ~ .tooltip {
+  /* If the INPUT has the invalid class, style the tooltip */
+  display: inline-block;
+}
+
+.invalid {
+  border: 1px solid red;
+  outline: none;
+}
+.valid {
+  border: 1px solid green;
+  outline: none;
+}
